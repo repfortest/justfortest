@@ -1,0 +1,32 @@
+version: '2'
+services:
+ 
+  mongo:
+    image: mongo
+    command: "--smallfiles --logpath=/dev/null"
+    ports:
+      - "27017:27017"
+    networks:
+      - all
+ 
+  app:
+    build: .
+    image: node:argon
+    working_dir: /usr/src/app
+    #command: node fortunecookie.js
+    #command: npm start
+    volumes:
+      - ./:/usr/src/app
+    #command: sh -c 'npm install; npm run seed; npm start'
+    command: node fortunecookie.js
+    tty: true    
+    ports:
+      - "3000:8080"
+    depends_on:
+      - mongo
+    networks:
+      - all
+ 
+networks:
+  all:
+  

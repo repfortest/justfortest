@@ -1,0 +1,14 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "main": "fortunecookie.js",
+  "scripts": {
+    "start": "node fortunecookie.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {},
+  "description": ""
+}
