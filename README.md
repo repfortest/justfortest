@@ -7,7 +7,7 @@ fortunecookie.js -- Node app
 
 Docker commands used: 
 
-$ docker build .
+`$ docker build .`
 
 $ docker build -t justfortest/my_mongodb:latest .
 
