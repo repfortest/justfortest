@@ -79,16 +79,13 @@ function FindAndChoose() {
                 console.log(`${answer}, ${fortune}`);
                 process.exit()
 
-
-
             });
-        });     
+        });
     });
-};  
-
+};
 
 // insert values into the collection
 InsertFortunes();
 
 // call the rest of the code and have it execute after 1 seconds
-setTimeout(FindAndChoose, 0);
+setTimeout(FindAndChoose, 1000);
