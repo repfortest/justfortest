@@ -22,19 +22,19 @@ Docker commands used:
 
 Login and push images to Docker Hub
 
-`$ docker login
+`$ docker login`
 
-$ docker push justfortest/fortunecookie`
+`$ docker push justfortest/fortunecookie`
 
 Docker Hub repository: https://hub.docker.com/u/justfortest/
 
 Get iside a container with app and run app (container with mongo should be started):
 
-`$ docker exec -it fortunecookie_app_1 bash
+`$ docker exec -it fortunecookie_app_1 bash`
 
-#cd /usr/src/app
+`#cd /usr/src/app`
 
-#node fortunecookie.js`
+`#node fortunecookie.js`
 
 If you would like to run app on host change a hostname in db connections string:
 
