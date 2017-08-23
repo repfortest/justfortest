@@ -26,6 +26,7 @@ $ docker login
 
 $ docker push justfortest/fortunecookie
 
+Docker Hub repository: https://hub.docker.com/u/justfortest/
 
 Get iside a container with app and run app (container with mongo should be started):
 
