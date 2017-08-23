@@ -27,9 +27,15 @@ $ docker login
 $ docker push justfortest/fortunecookie
 
 
-Pull container with app: 
+Get iside a container with app and run app (container with mongo should be started):
 
-Get iside a container with app and run app:
 $ docker exec -it fortunecookie_app_1 bash
+
 #cd /usr/src/app
+
 #node fortunecookie.js
+
+If you would like to run app on host change a hostname in db connections string:
+From container: var uri = 'mongodb://mongo:27017/admin';
+From Host: var uri = 'mongodb://127.0.0.1:27017/admin';
+
