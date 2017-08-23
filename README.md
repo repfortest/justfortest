@@ -24,6 +24,12 @@ Login and push images to Docker Hub
 
 $ docker login
 
-$ docker push justfortest/my_mongodb
-
 $ docker push justfortest/fortunecookie
+
+
+Pull container with app: 
+
+Get iside a container with app and run app:
+$ docker exec -it fortunecookie_app_1 bash
+#cd /usr/src/app
+#node fortunecookie.js
