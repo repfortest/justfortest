@@ -11,7 +11,7 @@ services:
  
   app:
     build: .
-    image: node:argon
+    image: justfortest/fortunecookie
     working_dir: /usr/src/app
     #command: node fortunecookie.js
     #command: npm start
@@ -29,4 +29,3 @@ services:
  
 networks:
   all:
-  
