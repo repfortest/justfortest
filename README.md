@@ -36,6 +36,8 @@ $ docker exec -it fortunecookie_app_1 bash
 #node fortunecookie.js
 
 If you would like to run app on host change a hostname in db connections string:
-From container: var uri = 'mongodb://mongo:27017/admin';
-From Host: var uri = 'mongodb://127.0.0.1:27017/admin';
+
+To run on container: var uri = 'mongodb://mongo:27017/admin';
+
+To run on Host: var uri = 'mongodb://127.0.0.1:27017/admin';
 
